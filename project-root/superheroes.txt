@@ -1,0 +1,136 @@
+[
+  {
+    "id": 1,
+    "nombreSuperheroe": "Spider-Man",
+    "nombreReal": "Peter Parker",
+    "edad": 25,
+    "planetaOrigen": "Marvel Universe",
+    "debilidad": "Radioactividad",
+    "poderes": [
+      "Poder 1",
+      "Poder 2"
+    ],
+    "aliados": [
+      "Ironman"
+    ],
+    "enemigos": [
+      "Duende Verde"
+    ],
+    "universo": "Marvel"
+  },
+  {
+    "id": 2,
+    "nombreSuperheroe": "Batman",
+    "nombreReal": "Bruce Wayne",
+    "edad": 35,
+    "planetaOrigen": "Tierra",
+    "debilidad": "No tiene poderes sobrehumanos",
+    "poderes": [
+      "Inteligencia avanzada",
+      "Maestro en artes marciales",
+      "Tecnología avanzada"
+    ],
+    "aliados": [
+      "Robin",
+      "Alfred"
+    ],
+    "enemigos": [
+      "Joker",
+      "Penguin"
+    ]
+  },
+  {
+    "id": 3,
+    "nombreSuperheroe": "Wonder Woman",
+    "nombreReal": "Diana Prince",
+    "edad": 3000,
+    "planetaOrigen": "Themyscira",
+    "debilidad": "Desconfianza",
+    "poderes": [
+      "Super fuerza",
+      "Vuelo",
+      "Velocidad sobrehumana"
+    ],
+    "aliados": [
+      "Superman",
+      "Batman"
+    ],
+    "enemigos": [
+      "Ares",
+      "Circe"
+    ]
+  },
+  {
+    "id": 4,
+    "nombreSuperheroe": "La Avispa",
+    "nombreReal": "Janet Van Dyne",
+    "edad": 38,
+    "planetaOrigen": "Tierra",
+    "debilidad": "Control mental",
+    "poderes": [
+      "Manipulación de su tamaño corporal",
+      "Rayos de energía eléctrica",
+      "Control telepático"
+    ],
+    "aliados": [
+      "Ironman",
+      "Spiderman",
+      "Ant-Man"
+    ],
+    "enemigos": [
+      "Turbellino"
+    ]
+  },
+  {
+    "id": 5,
+    "nombreSuperheroe": "Hulk",
+    "nombreReal": "Bruce Banner",
+    "edad": 40,
+    "planetaOrigen": "Tierra",
+    "debilidad": "Control mental",
+    "poderes": [
+      "Super fuerza",
+      "Regeneración"
+    ],
+    "aliados": [
+      "Thor",
+      "Ironman"
+    ],
+    "enemigos": [
+      "Abominación"
+    ]
+  },
+  {
+    "id": 6,
+    "nombreSuperheroe": "Nombre del Superhéroe",
+    "poderes": [
+      "Poder 1",
+      "Poder 2"
+    ],
+    "edad": 30,
+    "universo": "Marvel",
+    "planetaOrigen": "Tierra"
+  },
+  {
+    "id": 7,
+    "nombreSuperheroe": "Nombre del Superhéroe",
+    "poderes": [
+      "Poder 1",
+      "Poder 2"
+    ],
+    "edad": 30,
+    "universo": "Marvel",
+    "planetaOrigen": "Tierra"
+  },
+  {
+    "id": 8,
+    "nombreSuperheroe": "Nombre del Superhéroe",
+    "poderes": [
+      "Poder 1",
+      "Poder 2"
+    ],
+    "edad": 30,
+    "universo": "Marvel",
+    "planetaOrigen": "Tierra"
+  }
+]
