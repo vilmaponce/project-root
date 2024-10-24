@@ -1,14 +1,19 @@
+//Gestion de las solicitudes HTTP
+// se importan las funciones de servicio  para manejar la logica 
 
 import {obtenerSuperheroes, obtenerSuperheroePorId, agregarSuperheroe,  actualizarSuperheroe, eliminarSuperheroe,
-    buscarSuperheroesPorAtributo, obtenerSuperheroesMayoresDe30YconFiltros,obtenerSuperheroesPorNombreRealController} from '../services/superheroesService.mjs';
-
+    buscarSuperheroesPorAtributo, obtenerSuperheroesMayoresDe30YconFiltros} from '../services/superheroesService.mjs';
+//Devolver una respuesta en formato JSON
 import {renderizarSuperheroe, renderizarListaSuperheroes} from '../views/responseView.mjs';
 
+
+//responde a una solicitud GET para obtener los datos de superheroes y renderizarlo
 export function obtenerTodosSuperheroes(req, res){
     const superheroes = obtenerSuperheroes();
     res.send(renderizarListaSuperheroes(superheroes));
 }
 
+//Responde a una solicitud GET en la ruta /superheroes/id/:id
 export function obtenerSuperheroePorIdController(req, res) {
     const { id } = req.params;
     const superheroe = obtenerSuperheroePorId(parseInt(id)); // Asegúrate de que esta función esté bien definida
@@ -26,7 +31,7 @@ function obtenerSuperheroePorId(id) {
     return superheroes.find(superheroe => superheroe.id === id); // Asegúrate de que 'superheroes' esté definido
 }
 
-
+//responde a una solicitud POST en la ruta /superheroes para agregar un nuevo superhéroe.
 export function agregarNuevoSuperheroe(req, res) {
     const datos = req.body;
 
@@ -45,6 +50,7 @@ export function agregarNuevoSuperheroe(req, res) {
     res.send(nuevoSuperheroe);
 }
 
+//responde a una solicitud PUT en la ruta /superheroes/id/:id para actualizar un superheroe
 export function actualizarSuperheroePorId(req, res) {
     const { id } = req.params;
     const datos = req.body;
@@ -64,6 +70,7 @@ export function actualizarSuperheroePorId(req, res) {
     res.send(resultado ? 'Superhéroe actualizado' : 'Superhéroe no encontrado');
 }
 
+//Esta función responde a una solicitud DELETE en la ruta /superheroes/:id.
 export function eliminarSuperheroesPorId(req, res) {
     const { id } = req.params;
     const resultado = eliminarSuperheroe(parseInt(id));
@@ -75,7 +82,7 @@ export function eliminarSuperheroesPorId(req, res) {
     }
 }
 
-
+//Esta función responde a una solicitud GET en la ruta /superheroes/atributo/:atributo/:valor
 export function buscarSuperheroesPorAtributoController(req, res) {
     const { atributo, valor } = req.params;
     const superheroes = buscarSuperheroesPorAtributo(atributo, valor);
@@ -87,7 +94,8 @@ export function buscarSuperheroesPorAtributoController(req, res) {
     }
 }
 
-
+//Esta función responde a una solicitud GET en la ruta /superheroes/filtros y 
+//devuelve superhéroes que tienen más de 30 años y posiblemente aplicando otros filtros.
 export function obtenerSUperheroesMayorDe30YConFiltrosController(req, res){
     const superheroes = obtenerSuperheroesMayoresDe30YconFiltros();
     res.send(renderizarListaSuperheroes(superheroes));

@@ -1,3 +1,4 @@
+//define las operaciones que deben ser implementadas por clases que gestionen el almacenamiento de superhéroes.
 
 export default class SuperheroeDataSource{
     obtenerTodos(){

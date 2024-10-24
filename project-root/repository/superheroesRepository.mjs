@@ -1,6 +1,13 @@
+//La clase SuperheroesFileRepository es una implementación concreta de SuperheroeDataSource que gestiona la obtención y
+// almacenamiento de datos de superhéroes en un archivo de texto (en formato JSON)
+
+//Módulo de Node.js para interactuar con el sistema de archivos.
 import fs from 'fs';
+//Módulo de Node.js para manejar rutas de archivos.
 import path from 'path';
+//Convierte un URL de archivo a una ruta de sistema de archivos.
 import { fileURLToPath } from 'url';
+//Clase base que define la interfaz para las operaciones de superhéroes.
 import SuperheroeDataSource from './superheroesDataSource.mjs';
 
 export default class SuperheroesFileRepository extends SuperheroeDataSource {
