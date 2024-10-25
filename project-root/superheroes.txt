@@ -3,7 +3,7 @@
     "id": 1,
     "nombreSuperheroe": "Spider-Man",
     "nombreReal": "Peter Parker",
-    "edad": 25,
+    "edad": 30,
     "planetaOrigen": "Marvel Universe",
     "debilidad": "Radioactividad",
     "poderes": [
@@ -131,6 +131,12 @@
     ],
     "edad": 30,
     "universo": "Marvel",
+    "planetaOrigen": "Tierra"
+  },
+  {
+    "id": 9,
+    "nombreSuperheroe": "Serpiente-asesina",
+    "edad": 38,
     "planetaOrigen": "Tierra"
   }
 ]

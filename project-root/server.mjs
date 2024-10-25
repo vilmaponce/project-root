@@ -14,7 +14,7 @@ const PORT = 3005;
 
 // Define las Rutas que especifican las distintas operaciones CRUD 
 
-app.get('/superheroes', obtenerTodosSuperheroes);
+app.get('/superheroes', obtenerTodosSuperheroes);// Redirige a la ruta específica
 app.get('/superheroes/id/:id', obtenerSuperheroePorIdController);
 app.post('/superheroes', agregarNuevoSuperheroe);
 app.put('/superheroes/:id', actualizarSuperheroePorId);

@@ -16,7 +16,7 @@ export function obtenerTodosSuperheroes(req, res){
 //Responde a una solicitud GET en la ruta /superheroes/id/:id
 export function obtenerSuperheroePorIdController(req, res) {
     const { id } = req.params;
-    const superheroe = obtenerSuperheroePorId(parseInt(id)); // Asegúrate de que esta función esté bien definida
+    const superheroe = obtenerSuperheroePorId(parseInt(id)); 
 
     if (superheroe) {
         res.send(renderizarSuperheroe(superheroe)); // Envía el superhéroe si se encuentra
@@ -25,11 +25,6 @@ export function obtenerSuperheroePorIdController(req, res) {
     }
 }
 
-// Define la función obtenerSuperheroePorId en otro lugar de tu código
-function obtenerSuperheroePorId(id) {
-    // Lógica para buscar el superhéroe en la base de datos o en un array
-    return superheroes.find(superheroe => superheroe.id === id); // Asegúrate de que 'superheroes' esté definido
-}
 
 //responde a una solicitud POST en la ruta /superheroes para agregar un nuevo superhéroe.
 export function agregarNuevoSuperheroe(req, res) {
